@@ -46,7 +46,7 @@ These requests are designed to be executed sequentially to ensure secure and eff
 
 3. **Configure Environment Variables**:
 
-   ![Postman Import Screen](images/postman_env.png)
+   ![Postman Import Screen](images/postman_env.jpg)
 
    - In Postman, click on the **"Environments"** tab on the left sidebar.
    - Locate and select the **"LuxOS Chimney FanAdjustment"** environment.
