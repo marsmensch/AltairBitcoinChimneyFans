@@ -37,12 +37,12 @@
 					"raw": "{\"command\": \"logon\"}"
 				},
 				"url": {
-					"raw": "http://{{MINER_IP}}:4028",
+					"raw": "http://{{MINER_IP}}/api",
 					"protocol": "http",
 					"host": [
 						"{{MINER_IP}}"
 					],
-					"port": "4028"
+					"port": "8080"
 				}
 			},
 			"response": []
@@ -62,12 +62,12 @@
 					"raw": "{\"command\": \"fanset\", \"parameter\": \"{{SessionID}},power_off_speed=50\"}"
 				},
 				"url": {
-					"raw": "http://{{MINER_IP}}:4028",
+					"raw": "http://{{MINER_IP}}/api",
 					"protocol": "http",
 					"host": [
 						"{{MINER_IP}}"
 					],
-					"port": "4028"
+					"port": "8080"
 				}
 			},
 			"response": []
@@ -87,12 +87,12 @@
 					"raw": "{\"command\": \"logoff\", \"parameter\": \"{{SessionID}}\"}"
 				},
 				"url": {
-					"raw": "http://{{MINER_IP}}:4028",
+					"raw": "http://{{MINER_IP}}/api",
 					"protocol": "http",
 					"host": [
 						"{{MINER_IP}}"
 					],
-					"port": "4028"
+					"port": "8080"
 				}
 			},
 			"response": []

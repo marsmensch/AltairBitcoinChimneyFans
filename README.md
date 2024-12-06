@@ -1,10 +1,10 @@
-# LuxOS Fan Speed Adjustment for the Altair BitChimney 
+# LuxOS Fan Speed Adjustment
 
-This repository provides a Postman collection and environment configuration to automate the adjustment of the `power_off_speed` parameter on the [Altair BitChimney](https://altairtech.io/product/bitchimney/) Bitcoin mining space heater.
+This repository provides tools and instructions to automate the adjustment of the `power_off_speed` parameter on the [Altair BitChimney](https://altairtech.io/product/bitchimney/) Bitcoin mining space heater.
 
 ## Overview
 
-The Postman collection includes the following requests:
+The provided Postman collection includes the following requests:
 
 1. **Logon**: Initiates a session with the BitChimney device.
 2. **Set Fan Speed**: Adjusts the `power_off_speed` parameter to the desired value.
@@ -14,49 +14,66 @@ These requests are designed to be executed sequentially to ensure secure and eff
 
 ## Prerequisites
 
-- **Postman**: Install Postman from the [official website](https://www.postman.com/downloads/).
+- **Postman**: Postman is a comprehensive API platform that simplifies building, testing, and managing APIs. It offers a user-friendly interface, making it accessible for users who prefer not to work with command-line tools. You can sign up for a free account using your email or Google account, which allows for easy access and collaboration. [Sign up for free](https://www.postman.com/).
 
 ## Setup Instructions
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/marsmensch/AltairBitcoinChimneyFans.git
-   cd luxos-fan-adjustment
-   ```
+### Downloading the Repository as a ZIP File
 
-2. **Import the Postman Collection and Environment**:
-   - Open Postman.
-   - Click the **"Import"** button.
-   - Select the `LuxOS_Fan_Speed_Adjustment.postman_collection.json` file from the cloned repository.
-   - Navigate to the **"Environments"** tab in Postman.
-   - Click the **"Import"** button.
-   - Select the `LuxOS_Miner_Environment.postman_environment.json` file.
+1. **Access the Repository**:
+   - Navigate to the repository's GitHub page: `https://github.com/yourusername/luxos-fan-adjustment`.
+
+2. **Download the ZIP File**:
+   - Click on the **"Code"** button located near the top-right corner of the repository page.
+   - From the dropdown menu, select **"Download ZIP"**. This will download the entire repository as a ZIP file to your computer.
+
+3. **Extract the ZIP File**:
+   - Locate the downloaded ZIP file on your computer (typically in the "Downloads" folder).
+   - Right-click on the ZIP file and select **"Extract All..."** (Windows) or **"Open With > Archive Utility"** (macOS) to extract its contents.
+   - Choose a destination folder for the extracted files and complete the extraction process.
+
+### Importing into Postman
+
+1. **Open Postman**:
+   - Launch the Postman application on your computer.
+
+2. **Import the Collection and Environment Files**:
+   - Click the **"Import"** button located in the top-left corner of the Postman interface.
+   - In the Import window, select the **"Upload Files"** tab.
+   - Click **"Choose Files"** and navigate to the folder where you extracted the repository contents.
+   - Select both `LuxOS_Chimney_FanAdjustment.postman_collection.json` and `LuxOS_Chimney_FanAdjustment.postman_environment.json` files by holding down the `Ctrl` (Windows) or `Command` (macOS) key and clicking on each file.
+   - Click **"Open"** to import both files simultaneously.
+
+   ![Postman Import Screen](path/to/import-screen.png)
 
 3. **Configure Environment Variables**:
-   - In Postman, go to the **"Environments"** section.
-   - Select the **"LuxOS Miner Environment"**.
+   - In Postman, click on the **"Environments"** tab on the left sidebar.
+   - Locate and select the **"LuxOS Chimney FanAdjustment"** environment.
+   - Click the **"Eye"** icon to view the environment variables.
    - Update the `MINER_IP` variable to the IP address of your BitChimney device.
    - Ensure the `SessionID` variable is present but leave its value empty; it will be populated automatically during the logon process.
-   - Save the environment and set it as active.
+   - Click **"Save"** to apply the changes.
+   - Set the **"LuxOS Chimney FanAdjustment"** environment as active by selecting it from the environment dropdown in the top-right corner of Postman.
 
 ## Usage
 
 1. **Run the Collection**:
-   - In Postman, click on the **"Runner"** button.
-   - Select the **"LuxOS Fan Speed Adjustment"** collection.
-   - Choose the **"LuxOS Miner Environment"**.
-   - Click **"Start Run"** to execute the sequence.
+   - In Postman, click on the **"Runner"** button (represented by a play icon) located in the top-left corner.
+   - In the Collection Runner, select the **"LuxOS Chimney FanAdjustment"** collection.
+   - Ensure the **"LuxOS Chimney FanAdjustment"** environment is selected.
+   - Click **"Start Run"** to execute the sequence of requests.
+
+   ![Postman Collection Runner](path/to/collection-runner.png)
 
 2. **Verify Execution**:
-   - After completion, review the responses to ensure that each step was successful.
+   - After the run completes, review the responses to ensure that each step was successful.
    - Confirm that the `power_off_speed` parameter has been adjusted to the desired value.
 
-## Notes
+## Command-Line Instructions for Advanced Users
 
-- The default API port for the BitChimney device is `4028`. Ensure that this port is accessible and not blocked by any firewall settings.
-- Handle the `SessionID` securely; it is used to authenticate sessions with the device.
-- For more information about the Altair BitChimney, visit the [official product page](https://altairtech.io/product/bitchimney/).
+For users comfortable with the command line, you can use `curl` or custom shell scripts to interact with the miner's HTTP API. Below are examples for both Unix-based systems (Linux/macOS) and Windows PowerShell.
 
-## Support
+This repository includes two example scripts to adjust the power_off_speed parameter.
 
-For product assistance, please refer to the [Altair Technology Support Page](https://altairtech.io/contact-us/).
+Linux/macOS: shell.sh
+Windows PowerShell: windows_powershell.ps1
