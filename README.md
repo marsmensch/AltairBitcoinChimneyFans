@@ -2,6 +2,8 @@
 
 This repository provides tools and instructions to automate the adjustment of the `power_off_speed` parameter on the [Altair BitChimney](https://altairtech.io/product/bitchimney/) Bitcoin mining space heater.
 
+   ![Altair BitChimney - a luxOS powered miner](images/BitChminey.jpg)
+
 ## Overview
 
 The provided Postman collection includes the following requests:
@@ -21,13 +23,9 @@ These requests are designed to be executed sequentially to ensure secure and eff
 ### Downloading the Repository as a ZIP File
 
 1. **Access the Repository**:
-   - Navigate to the repository's GitHub page: `https://github.com/yourusername/luxos-fan-adjustment`.
+   - Download this the repository's ZIP archive: [ZIP DOWNLOAD](https://github.com/marsmensch/AltairBitcoinChimneyFans/archive/refs/heads/main.zip)
 
-2. **Download the ZIP File**:
-   - Click on the **"Code"** button located near the top-right corner of the repository page.
-   - From the dropdown menu, select **"Download ZIP"**. This will download the entire repository as a ZIP file to your computer.
-
-3. **Extract the ZIP File**:
+2. **Extract the ZIP File**:
    - Locate the downloaded ZIP file on your computer (typically in the "Downloads" folder).
    - Right-click on the ZIP file and select **"Extract All..."** (Windows) or **"Open With > Archive Utility"** (macOS) to extract its contents.
    - Choose a destination folder for the extracted files and complete the extraction process.
@@ -44,9 +42,12 @@ These requests are designed to be executed sequentially to ensure secure and eff
    - Select both `LuxOS_Chimney_FanAdjustment.postman_collection.json` and `LuxOS_Chimney_FanAdjustment.postman_environment.json` files by holding down the `Ctrl` (Windows) or `Command` (macOS) key and clicking on each file.
    - Click **"Open"** to import both files simultaneously.
 
-   ![Postman Import Screen](path/to/import-screen.png)
+   ![Postman Import Screen](images/postman_import.png)
 
 3. **Configure Environment Variables**:
+
+   ![Postman Import Screen](images/postman_import.png)
+
    - In Postman, click on the **"Environments"** tab on the left sidebar.
    - Locate and select the **"LuxOS Chimney FanAdjustment"** environment.
    - Click the **"Eye"** icon to view the environment variables.
@@ -63,7 +64,7 @@ These requests are designed to be executed sequentially to ensure secure and eff
    - Ensure the **"LuxOS Chimney FanAdjustment"** environment is selected.
    - Click **"Start Run"** to execute the sequence of requests.
 
-   ![Postman Collection Runner](path/to/collection-runner.png)
+   ![Postman Import Screen](images/postman_exectute.png)
 
 2. **Verify Execution**:
    - After the run completes, review the responses to ensure that each step was successful.
@@ -75,5 +76,5 @@ For users comfortable with the command line, you can use `curl` or custom shell 
 
 This repository includes two example scripts to adjust the power_off_speed parameter.
 
-Linux/macOS: shell.sh
-Windows PowerShell: windows_powershell.ps1
+- **Linux/macOS**: [Download shell.sh](https://raw.githubusercontent.com/yourusername/luxos-fan-adjustment/main/shell.sh)
+- **Windows PowerShell**: [Download windows_powershell.ps1](https://raw.githubusercontent.com/yourusername/luxos-fan-adjustment/main/windows_powershell.ps1)
