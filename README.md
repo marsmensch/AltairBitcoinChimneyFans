@@ -76,5 +76,5 @@ For users comfortable with the command line, you can use `curl` or custom shell 
 
 This repository includes two example scripts to adjust the power_off_speed parameter.
 
-- **Linux/macOS**: [Download shell.sh](https://raw.githubusercontent.com/marsmensch/AltairBitcoinChimneyFans/main/shell.sh)
-- **Windows PowerShell**: [Download windows_powershell.ps1](https://raw.githubusercontent.com/marsmensch/AltairBitcoinChimneyFans/main/windows_powershell.ps1)
+- **Linux/macOS**: [Download shell.sh](https://raw.githubusercontent.com/marsmensch/AltairBitcoinChimneyFans/refs/heads/main/shell.sh)
+- **Windows PowerShell**: [Download windows_powershell.ps1](https://raw.githubusercontent.com/marsmensch/AltairBitcoinChimneyFans/refs/heads/main/windows_powershell.ps1)
