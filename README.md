@@ -46,7 +46,7 @@ These requests are designed to be executed sequentially to ensure secure and eff
 
 3. **Configure Environment Variables**:
 
-   ![Postman Import Screen](images/postman_import.png)
+   ![Postman Import Screen](images/postman_env.png)
 
    - In Postman, click on the **"Environments"** tab on the left sidebar.
    - Locate and select the **"LuxOS Chimney FanAdjustment"** environment.
@@ -64,7 +64,7 @@ These requests are designed to be executed sequentially to ensure secure and eff
    - Ensure the **"LuxOS Chimney FanAdjustment"** environment is selected.
    - Click **"Start Run"** to execute the sequence of requests.
 
-   ![Postman Import Screen](images/postman_exectute.png)
+   ![Postman Import Screen](images/postman_execute.png)
 
 2. **Verify Execution**:
    - After the run completes, review the responses to ensure that each step was successful.
